@@ -80,18 +80,15 @@ int main(){
 				//break;
 			}
 		}
-
+        else if(state ==4&&inp[head]=='\0'){
+            printf("accept\n");
+            break;
+        }
         else{
-        		printf("final result is %s :  cmhead %d status state %d\n",inp,head,state);
+        		printf("Reject\n");
             break;
         }
     }// while loooop end
-	if (state == 4){
-		printf("accept\n");
-	}
-	else{
-		printf("Reject\n");
-	}
 return 0;
 }
 
