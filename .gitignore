@@ -1,0 +1,13 @@
+/TuringMachine/
+*.db
+*.swp
+*.exe
+*.o
+*.recommenders
+*.metadata
+*.classpath
+*.project
+*.cproject
+*.settings
+*.DS_Store
+*.out
