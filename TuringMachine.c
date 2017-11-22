@@ -51,7 +51,7 @@ int main(){
 			else if(inp[head] == 'y'){
 				inp[head]='y';
 			}
-            while(inp[head] != 'x'){
+            if(inp[head] != 'x'){
                 head--;//move left
                 state = 2;
                 printf("\n\n State 2 HEAD : %d\n",head);
@@ -72,7 +72,7 @@ int main(){
 
 
 		else if(state ==3&&inp[head]=='y'){
-			while(inp[head]   == 'y'){
+			if(inp[head]   == 'y'){
 				head++;
 			}
 			if(inp[head]=='\0'){
