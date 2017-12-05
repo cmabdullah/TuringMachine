@@ -18,7 +18,7 @@ int main(){
             inp[head] = 'x';
             state = 1; //move right
             head++;
-            printf("input : %s head : %d, state : %d\n",inp,head, state);
+            //printf("input : %s head : %d, state : %d\n",inp,head, state);
         }
         else if (state == 1 && (inp[head] == '0' || inp[head]== 'y')){
             //printf("Show\n");
@@ -33,28 +33,30 @@ int main(){
             if(inp[head] != '1'){
                 head++;
             }
-            printf("\n\nHEAD : %d",head);
+            //printf("\n\nHEAD : %d",head);
 
         }
         else if (state == 1 && inp[head] == '1'){
             inp[head] = 'y';
-            printf("\n\nlast Input  : %s",inp);
+            //printf("\n\nlast Input  : %s",inp);
             state = 2;
             head--;
-            printf("\n\n Current HEAD : %d\n",head);
+            //printf("\n\n Current HEAD : %d\n",head);
         }
 
         else if (state == 2 && (inp[head]=='0' || inp[head]=='y')){
-			if(inp[head] =='0'){
-				inp[head]= '0';
-			}
-			else if(inp[head] == 'y'){
-				inp[head]='y';
-			}
+			
             if(inp[head] != 'x'){
+                
+                if(inp[head] =='0'){
+                inp[head]= '0';
+                }
+                else if(inp[head] == 'y'){
+                    inp[head]='y';
+                }
                 head--;//move left
                 state = 2;
-                printf("\n\n State 2 HEAD : %d\n",head);
+                //printf("\n\n State 2 HEAD : %d\n",head);
             }
         }
 
@@ -62,7 +64,7 @@ int main(){
         		inp[head] = 'x';
          	 head++;
             state = 0;
-            printf("\n\n State 2 secod part HEAD Update : %d, inp %s state 2 end\n",head, inp);
+            //printf("\n\n State 2 secod part HEAD Update : %d, inp %s state 2 end\n",head, inp);
         }
 
 		else if(state ==0 && inp[head] == 'y'){
