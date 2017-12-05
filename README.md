@@ -2,7 +2,7 @@
 
 # State diagram for TM 
 
-![alt text](https://imgur.com/a/3i1ui "STD") <br/>
+![alt text](https://i.imgur.com/pVjbJKe.png "STD") <br/>
 
 
 ## Transition table
@@ -22,4 +22,4 @@
 
 # Result 
 
-![alt text](https://imgur.com/a/ydyjn "Result") <br/>
+![alt text](https://i.imgur.com/NBIgmHE.png "Result") <br/>
